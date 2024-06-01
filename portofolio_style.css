@@ -1,0 +1,465 @@
+* {
+    /* background-color: aliceblue; */
+    font-family: Railway,sans-serif;
+    margin: 0px;   
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background: linear-gradient(15deg, #030e15 0%, #80d0c7 100%);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    box-shadow: 0 5px 10px rgba(0, 26, 12, 0.1);
+    top:0;
+    left: 0;
+}
+
+.navbar .navbar-brand{
+    font-family: cursive;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.navbar button{
+    color: #fff;
+    background-color: #fff;
+    
+}
+
+.navbar .container .navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap:25px;
+}
+
+.navbar .navbar-brand{
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-item .nav-link{
+    color: white;
+    padding: 10px 20px;
+    transition: 0.3s ease;
+    border:none;
+    border-radius: 5px;
+    font-weight: 600;
+    /* font-size: 20px; */
+}
+
+.navbar i{
+    color:inherit;
+    background-color: inherit;
+    transform: 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    background-color: white;
+    color:rgb(0, 41, 41);
+}
+
+
+.offset::before{
+    display: block;
+    content:"";
+    height: 3rem;
+
+}
+
+@media only screen and (max-width:991px) {
+    .navbar .navbar-nav{
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        margin-top: 15px;
+    }
+
+    #navbarSupportedContent > ul > li{
+        width: 100%;
+    }
+
+    /* #navbarSupportedContent > ul > li > a{
+        display: inline;
+        text-align: left;
+    } */
+    
+}
+
+
+
+
+
+
+
+
+/*         
+#header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    column-gap: 40px;
+    background: linear-gradient(15deg, #030e15 0%, #80d0c7 100%);
+    background-size: 200%;
+    background-repeat: no-repeat;
+}
+
+#warisAliLogo{
+    text-align: left;
+}
+#header a{
+    text-decoration: none;
+    font-size: large;
+    color: inherit;
+    background-color: inherit;
+    font-weight: 600;
+    
+    
+}
+#header ul {
+    list-style: none;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+
+#header ul li{
+    display: block;
+
+    padding: 15px;
+    border-radius: 15px;
+    color:white;
+}
+
+#header ul li:hover{
+    background-color:white;
+    color:  rgb(0, 49, 49);
+}
+
+#header ul li i{
+    font-size: 20px;
+    text-decoration:solid;
+    background-color: inherit;
+    color:inherit;
+} */
+
+/* home Container starts; */
+#home{
+    /* margin-top: 10px; */
+    width: 100%;
+    height:100vh;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    /* column-gap: 150px; */
+    background: url("https://files.123freevectors.com/wp-content/original/128634-abstract-green-and-white-wavy-background-vector.jpg");
+    /* background: url("https://img.freepik.com/free-vector/gradient-dynamic-lines-background_23-2149011966.jpg?size=626&ext=jpg&ga=GA1.1.1518270500.1717200000&semt=ais_user"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-size:200%; */
+    /* padding-top: 25px; */
+    /* padding-bottom: 25px; */
+    margin-bottom: 0px;
+}
+
+#container1 {
+    width:300px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* gap: 25px; */
+    
+}
+
+#container1 p {
+    font-family: Railway,sans-serif;
+    font-size: 45px;
+    text-align: center;
+    unicode-bidi: isolate;
+}
+
+a{
+    cursor:pointer;
+}
+
+#container1 button{
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: darkcyan;
+    transition: all 0.3s ease 0s;
+    border: none;
+    border-radius: 15px;
+}
+
+#container1 button:hover {
+    background-color: #0c3343;
+    box-shadow: 0px 15px 20px #fff;
+    color: #fff;
+    transform: translateY(-7px);    
+}
+
+#container1 button span,i{
+    color:whitesmoke;
+    background: inherit;
+}
+
+
+#imageContainer {
+    border:0px solid black;
+    border-radius: 18px;
+}
+
+
+/* About container */
+#About{
+    background: linear-gradient(120deg, #ffffff 0%, #50a7c26f 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    /* padding-top: 15px; */
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 20px;
+}
+
+.heading2{
+    /* margin-top: 25px; */
+    font-size: 30px;
+    color: rgb(0, 56, 56);
+    font-weight: 600;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    unicode-bidi: isolate;
+}
+
+
+.aboutpara{
+    color: rgb(0, 56, 56);
+    /* margin-left: 7.2em; */
+    /* margin-right: 7.2em; */
+    text-align:justify ;
+    font-size: 1.0em;
+    line-height: 33px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    unicode-bidi: isolate;
+}
+
+#codingimg {
+    border-radius: 25px;
+    border:1px solid darkcyan;
+}
+
+/* Skills starts */
+#skills{
+    /* height: 330px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    background-size: 300%;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+#toolContainer{
+    width: 60%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    column-gap: 15px;
+    row-gap: 5px;
+    border-bottom: 3px solid darkcyan;
+    border-radius: 15px;
+}
+
+.tool {
+    width:150px;
+    padding:25px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    align-items: center;
+    justify-content: center;
+    background: url("https://www.wallpaperflare.com/static/825/572/839/line-light-spot-shape-wallpaper.jpg");
+    background-size: 580%;    
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    border-radius: 8px;
+}
+
+.tool i{
+    font-size: xxx-large;
+    background: none;
+    font-weight: bolder;
+    color: inherit;
+}
+
+/* recent work container starts */
+#workContainer {
+    width: 100%;
+    /* height: 1000px; */
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+    flex-wrap: wrap;
+}
+
+#workContainer h3{
+    font-size: 25px;
+    color: rgb(11, 30, 30);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 80%; */
+    column-gap: 10px;
+    row-gap: 10px;
+    /* border: 15px; */
+}
+
+.projectImage {
+    border-radius: 15px;
+    /* margin-bottom: 15px; */
+}
+
+.aboutProject {
+    /* padding: 15px; */
+    color: rgb(5, 21, 21);
+    /* background-image: linear-gradient(0deg, #ffffff 0%, darkcyan 100%); */
+    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+    background-size: 200%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-decoration-thickness: auto;
+    border-radius: 15px;
+}
+
+.aboutProject p{
+    font-size: 18.5px;
+    font-family:system-ui, -apple-system, sans-serif;
+    /* padding-left: 25px; */
+    /* padding-right: 25px; */
+    text-align:justify;
+    /* font-weight: 400; */
+    unicode-bidi: isolate;
+    
+}
+
+.aboutProject h4{
+    font-size: larger;
+    font-weight: 600;
+}
+
+#stackUsed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:35px;
+}
+
+#stackUsed i{
+    font-size:43px;
+    color: #0c3343;
+}
+
+#projectButtons {
+    display: flex;
+    gap: 35px;
+}
+
+#projectButtons button{
+    padding:5px 25px;
+    border-radius: 5px;
+    background-color: #0c3343;
+    font-weight: 600;
+    color: azure;
+}
+
+#projectButtons button:hover {
+    background-color: azure;
+    color: rgb(0, 45, 45) ;
+    font-weight: 600;
+    
+}
+
+
+#contactContainer {
+    width: 100%;
+    background: linear-gradient(270deg,white,#80d0c7);
+    background-size: 200%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content:space-between; */
+    font-size: larger;
+    text-decoration-thickness: auto;
+    gap: 8px;
+}
+
+#contactContainer p{
+ font-weight: 500;
+}
+
+#socialIcons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 33px;
+    font-size: 45px;
+    color: black;
+}
+
+#socialIcons i{
+    color:black;
+}
+
+#socialIcons a{
+    text-decoration: none;
+    color: none;
+}
+
+.simple-icons--leetcode {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M13.483 0a1.37 1.37 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.3 5.3 0 0 0-1.209 2.104a5 5 0 0 0-.125.513a5.5 5.5 0 0 0 .062 2.362a6 6 0 0 0 .349 1.017a5.9 5.9 0 0 0 1.271 1.818l4.277 4.193l.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.38 1.38 0 0 0-1.951-.003l-2.396 2.392a3.02 3.02 0 0 1-4.205.038l-.02-.019l-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.7 2.7 0 0 1 .066-.523a2.55 2.55 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0m-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382a1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382a1.38 1.38 0 0 0-1.38-1.382z'/%3E%3C/svg%3E");
+}
+
+
